@@ -6,13 +6,13 @@ var configFunction = function ($routeProvider) {
     'use strict';
     $routeProvider
         .when('/hypebeast', {
-            templateUrl: '/views/hypebeast.html'
+            templateUrl: 'views/hypebeast.html'
         })
         .when('/victorcruz', {
-            templateUrl: '/views/teamvic.html'
+            templateUrl: 'views/teamvic.html'
         })
         .when('/highsnobiety', {
-            templateUrl: '/views/highsnobiety.html'
+            templateUrl: 'views/highsnobiety.html'
         })
         .otherwise({
             redirectTo: 'index.html'
