@@ -15,7 +15,7 @@ var configFunction = function ($routeProvider) {
             templateUrl: 'views/highsnobiety.html'
         })
         .otherwise({
-            redirectTo: 'index.html'
+            redirectTo: '/'
         });
 }
 configFunction.$inject = ['$routeProvider'];
