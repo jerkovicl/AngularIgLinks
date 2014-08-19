@@ -2,22 +2,23 @@ var AngularIgLinks = angular.module('AngularIgLinks', ['ngRoute']);
 
 AngularIgLinks.controller('LandingPageController', LandingPageController);
 
-var configFunction = function ($routeProvider) {
+var configFunction = function ($routeProvider, $locationProvider) {
     'use strict';
+    $locationProvider.html5Mode(true);
     $routeProvider
         .when('/hypebeast', {
-            templateUrl: '/views/hypebeast.html'
+            templateUrl: 'views/hypebeast.html'
         })
         .when('/victorcruz', {
-            templateUrl: '/views/teamvic.html'
+            templateUrl: 'views/teamvic.html'
         })
         .when('/highsnobiety', {
-            templateUrl: '/views/highsnobiety.html'
+            templateUrl: 'views/highsnobiety.html'
         })
         .otherwise({
-            redirectTo: 'index.html'
+            redirectTo: '/hypebeast'
         });
 }
-configFunction.$inject = ['$routeProvider'];
+configFunction.$inject = ['$routeProvider', '$locationProvider'];
 
 AngularIgLinks.config(configFunction);
