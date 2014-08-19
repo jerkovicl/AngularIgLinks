@@ -3,7 +3,7 @@ var AngularIgLinks = angular.module('AngularIgLinks', ['ngRoute']);
 AngularIgLinks.controller('LandingPageController', LandingPageController);
 
 var configFunction = function ($routeProvider,$locationProvider) {
-    'use strict';
+    
     $routeProvider
         .when('/hypebeast', {
             templateUrl: '/views/hypebeast.html'
