@@ -2,7 +2,7 @@ var AngularIgLinks = angular.module('AngularIgLinks', ['ngRoute']);
 
 AngularIgLinks.controller('LandingPageController', LandingPageController);
 
-var configFunction = function ($routeProvider) {
+var configFunction = function ($routeProvider,$locationProvider) {
     'use strict';
     $routeProvider
         .when('/hypebeast', {
@@ -18,6 +18,6 @@ var configFunction = function ($routeProvider) {
             redirectTo: '/'
         });
 }
-configFunction.$inject = ['$routeProvider'];
+configFunction.$inject = ['$routeProvider', '$locationProvider'];
 
 AngularIgLinks.config(configFunction);
