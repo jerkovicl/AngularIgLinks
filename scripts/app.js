@@ -3,7 +3,6 @@ var AngularIgLinks = angular.module('AngularIgLinks', ['ngRoute']);
 AngularIgLinks.controller('LandingPageController', LandingPageController);
 
 var configFunction = function ($routeProvider, $locationProvider) {
-    'use strict';
     $locationProvider.html5Mode(true);
     $routeProvider
         .when('/hypebeast', {
