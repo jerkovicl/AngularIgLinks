@@ -17,7 +17,7 @@ var configFunction = function ($routeProvider, $locationProvider) {
         .otherwise({
             redirectTo: '/hypebeast'
         });
-}
+};
 configFunction.$inject = ['$routeProvider', '$locationProvider'];
 
 AngularIgLinks.config(configFunction);
